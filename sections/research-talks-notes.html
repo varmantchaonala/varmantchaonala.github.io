@@ -1,0 +1,180 @@
+<!-- ═══════════════════════════════════════════
+     sections/research.html
+═══════════════════════════════════════════ -->
+<section id="research">
+  <div class="wrap">
+    <div class="sh rv">
+      <p class="sh-eye">Themes & Projects</p>
+      <h2 class="sh-title">Research</h2>
+    </div>
+    <div class="research-grid">
+      <div class="rcard rv">
+        <span class="rcard-icon">⚛️</span>
+        <div class="rcard-name">Quantum Natural Language Processing</div>
+        <div class="rcard-desc">Quantum-native compositional semantics, context-sensitive word embeddings, and scalable QNLP architectures. Focus on <strong>African low-resource languages</strong> — where data-efficient quantum methods have real potential (DAAD-funded).</div>
+      </div>
+      <div class="rcard rv">
+        <span class="rcard-icon">🔄</span>
+        <div class="rcard-name">Quantum Generative Modeling</div>
+        <div class="rcard-desc">Quantum encoder–decoder architectures with quantum attention, evaluated on Qiskit and Pennylane simulators. Targeting multimodal generation across text, audio, and image modalities.</div>
+      </div>
+      <div class="rcard rv">
+        <span class="rcard-icon">🔗</span>
+        <div class="rcard-name">Hybrid Classical–Quantum Pipelines</div>
+        <div class="rcard-desc">Parameterized quantum circuits (PQC) integrated with classical neural networks under NISQ-era constraints. Focus on representation capacity, gradient stability, and generalization bounds.</div>
+      </div>
+      <div class="rcard rv">
+        <span class="rcard-icon">🔬</span>
+        <div class="rcard-name">Quantum Algorithms & Optimization</div>
+        <div class="rcard-desc">QAOA-based approaches to NP-hard problems including SAT (M.Sc. thesis), QUBO formulations, and quantum ML primitives: SVM, clustering, regression on near-term devices.</div>
+      </div>
+    </div>
+
+    <!-- Quantum circuit explainer panel -->
+    <div class="research-visual rv">
+      <div class="research-visual-text">
+        <h3>Quantum Attention Mechanism</h3>
+        <p>At the core of the quantum transformer is a parameterized circuit encoding token representations into quantum states. Entangling gates create attention-like correlations within the full Hilbert space — something classical dot-product attention can only approximate.</p>
+      </div>
+      <svg width="260" height="148" viewBox="0 0 260 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="260" height="148" rx="8" fill="#f8faff"/>
+        <line x1="14" y1="38"  x2="246" y2="38"  stroke="#cbd5e1" stroke-width="1"/>
+        <line x1="14" y1="74"  x2="246" y2="74"  stroke="#cbd5e1" stroke-width="1"/>
+        <line x1="14" y1="110" x2="246" y2="110" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="10" y="42"  font-family="'IBM Plex Mono',monospace" font-size="9" fill="#94a3b8" text-anchor="end">q₀</text>
+        <text x="10" y="78"  font-family="'IBM Plex Mono',monospace" font-size="9" fill="#94a3b8" text-anchor="end">q₁</text>
+        <text x="10" y="114" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#94a3b8" text-anchor="end">q₂</text>
+        <rect x="22" y="29"  width="22" height="18" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+        <text x="33" y="42"  font-family="'IBM Plex Mono',monospace" font-size="9" fill="#2563eb" text-anchor="middle">H</text>
+        <rect x="22" y="65"  width="22" height="18" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+        <text x="33" y="78"  font-family="'IBM Plex Mono',monospace" font-size="9" fill="#2563eb" text-anchor="middle">H</text>
+        <rect x="22" y="101" width="22" height="18" rx="3" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+        <text x="33" y="114" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#2563eb" text-anchor="middle">H</text>
+        <rect x="60" y="29"  width="26" height="18" rx="3" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+        <text x="73" y="42"  font-family="'IBM Plex Mono',monospace" font-size="8" fill="#7c3aed" text-anchor="middle">Rᵧ</text>
+        <rect x="60" y="65"  width="26" height="18" rx="3" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1"/>
+        <text x="73" y="78"  font-family="'IBM Plex Mono',monospace" font-size="8" fill="#7c3aed" text-anchor="middle">Rᵧ</text>
+        <line x1="106" y1="38" x2="106" y2="65" stroke="#0891b2" stroke-width="1.2"/>
+        <circle cx="106" cy="38" r="3.5" fill="#0891b2"/>
+        <circle cx="106" cy="74" r="7" fill="none" stroke="#0891b2" stroke-width="1.2"/>
+        <line x1="100" y1="74" x2="112" y2="74" stroke="#0891b2" stroke-width="1.2"/>
+        <line x1="106" y1="68" x2="106" y2="80" stroke="#0891b2" stroke-width="1.2"/>
+        <rect x="124" y="29"  width="26" height="18" rx="3" fill="#f0fdf9" stroke="#059669" stroke-width="1"/>
+        <text x="137" y="42"  font-family="'IBM Plex Mono',monospace" font-size="8" fill="#059669" text-anchor="middle">Rᵤ</text>
+        <rect x="124" y="65"  width="26" height="18" rx="3" fill="#f0fdf9" stroke="#059669" stroke-width="1"/>
+        <text x="137" y="78"  font-family="'IBM Plex Mono',monospace" font-size="8" fill="#059669" text-anchor="middle">Rᵤ</text>
+        <rect x="124" y="101" width="26" height="18" rx="3" fill="#f0fdf9" stroke="#059669" stroke-width="1"/>
+        <text x="137" y="114" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#059669" text-anchor="middle">Rᵤ</text>
+        <line x1="170" y1="74"  x2="170" y2="101" stroke="#7c3aed" stroke-width="1.2"/>
+        <circle cx="170" cy="74"  r="3.5" fill="#7c3aed"/>
+        <circle cx="170" cy="110" r="7" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+        <line x1="164" y1="110" x2="176" y2="110" stroke="#7c3aed" stroke-width="1.2"/>
+        <line x1="170" y1="104" x2="170" y2="116" stroke="#7c3aed" stroke-width="1.2"/>
+        <rect x="196" y="29"  width="22" height="18" rx="3" fill="#fff7ed" stroke="#f59e0b" stroke-width="1"/>
+        <text x="207" y="42"  font-family="'IBM Plex Mono',monospace" font-size="8" fill="#b45309" text-anchor="middle">M</text>
+        <rect x="196" y="65"  width="22" height="18" rx="3" fill="#fff7ed" stroke="#f59e0b" stroke-width="1"/>
+        <text x="207" y="78"  font-family="'IBM Plex Mono',monospace" font-size="8" fill="#b45309" text-anchor="middle">M</text>
+        <rect x="196" y="101" width="22" height="18" rx="3" fill="#fff7ed" stroke="#f59e0b" stroke-width="1"/>
+        <text x="207" y="114" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#b45309" text-anchor="middle">M</text>
+        <line x1="218" y1="38"  x2="244" y2="38"  stroke="#f59e0b" stroke-width="1" stroke-dasharray="3 2"/>
+        <line x1="218" y1="74"  x2="244" y2="74"  stroke="#f59e0b" stroke-width="1" stroke-dasharray="3 2"/>
+        <line x1="218" y1="110" x2="244" y2="110" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3 2"/>
+        <text x="14" y="138" font-family="'IBM Plex Mono',monospace" font-size="7.5" fill="#94a3b8">H: Hadamard · Rᵧ/Rᵤ: rotation · ⊕: CNOT · M: measurement</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     sections/talks.html
+     Add new talks by copying a .talk-item block.
+     Types: talk-type (default) · poster · invited
+═══════════════════════════════════════════ -->
+<section id="talks">
+  <div class="wrap">
+    <div class="sh rv">
+      <p class="sh-eye">Conferences · Seminars · Posters</p>
+      <h2 class="sh-title">Talks & Presentations</h2>
+    </div>
+    <div class="talk-list rv">
+
+      <!-- ── Add your talks here — copy this block ── -->
+      <div class="talk-item">
+        <div class="talk-year">2025</div>
+        <div>
+          <div class="talk-title">Quantum Word Embeddings for Low-Resource Languages</div>
+          <div class="talk-event">Internal Seminar · University of Oldenburg</div>
+        </div>
+        <span class="talk-type">Talk</span>
+      </div>
+
+      <div class="talk-item">
+        <div class="talk-year">2024</div>
+        <div>
+          <div class="talk-title">Quantum NLP: State of the Art and Open Challenges</div>
+          <div class="talk-event">Research Colloquium · Faculty V, Oldenburg</div>
+        </div>
+        <span class="talk-type poster">Poster</span>
+      </div>
+
+      <div class="talk-item">
+        <div class="talk-year">2024</div>
+        <div>
+          <div class="talk-title">Hybrid Classical–Quantum Architectures for Generative AI</div>
+          <div class="talk-event">DAAD Fellows Workshop · Germany</div>
+        </div>
+        <span class="talk-type invited">Invited</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     sections/notes.html
+     Add new notes by copying a .note-card block.
+     Tag classes: (default amber) · explainer · review
+═══════════════════════════════════════════ -->
+<section id="notes">
+  <div class="wrap">
+    <div class="sh rv">
+      <p class="sh-eye">Explainers · Paper reviews · Tutorials</p>
+      <h2 class="sh-title">Research Notes</h2>
+    </div>
+    <div class="notes-grid">
+
+      <!-- ── Add new notes here — copy this block ── -->
+      <a class="note-card rv" href="#">
+        <span class="note-tag explainer">Explainer</span>
+        <div class="note-title">What is Quantum NLP — and why does it matter for African languages?</div>
+        <div class="note-desc">A plain-language introduction to compositional quantum semantics and why low-resource settings are uniquely suited to quantum approaches.</div>
+        <div class="note-date">Coming soon</div>
+      </a>
+
+      <a class="note-card rv" href="#">
+        <span class="note-tag review">Paper Review</span>
+        <div class="note-title">Reading Notes: Quantum Advantage in NLP — what the papers actually show</div>
+        <div class="note-desc">A critical reading of recent claims of quantum advantage in language tasks, separating experimental results from theoretical expectations.</div>
+        <div class="note-date">Coming soon</div>
+      </a>
+
+      <a class="note-card rv" href="#">
+        <span class="note-tag">Tutorial</span>
+        <div class="note-title">Getting started with Qiskit for NLP — a minimal guide</div>
+        <div class="note-desc">Step-by-step setup and first experiments: encoding sentences as quantum circuits using the lambeq toolkit and running on simulators.</div>
+        <div class="note-date">Coming soon</div>
+      </a>
+
+      <a class="note-card rv" href="#">
+        <span class="note-tag explainer">Explainer</span>
+        <div class="note-title">Bra-ket notation for machine learning researchers</div>
+        <div class="note-desc">The quantum formalism that ML researchers need to understand QNLP papers — explained with analogies to vectors and dot products.</div>
+        <div class="note-date">Coming soon</div>
+      </a>
+
+    </div>
+    <div class="notes-cta rv">
+      ✏️ More notes in preparation — check back soon, or <a href="mailto:var001charmant@gmail.com">reach out</a> if you'd like to be notified.
+    </div>
+  </div>
+</section>
